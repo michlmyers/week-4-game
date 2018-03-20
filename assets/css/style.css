@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 10px; 
+} 
+
+body {
+    background-color: rgb(83, 39, 3);
+    color: black;
+    background-image: url(../images/cave.jpg);
+}
+
+.images {
+    height: 150px;
+    width: 150px;
+    border: 2px dotted rgba(150, 150, 9, 0.507);
+    border-radius: 25px;
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: bisque;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: black;
+    border-radius: 25px;
+    border: 2px dotted rgba(150, 150, 9, 0.507);
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+.midLeft{
+    text-align: left;
+    color: bisque;
+    padding: 18px;
+    width: 33.5%;
+    background-color: black;
+    border-radius: 25px;
+    border: 2px dotted rgba(150, 150, 9, 0.507);
+    display: inline-block;
+    float: left;
+}
+
+.midRight{
+    text-align: right;
+    padding: 18px;
+    width: 33.6%;
+    color: bisque;
+    background-color: black;
+    border-radius: 25px;
+    border: 2px dotted rgba(150, 150, 9, 0.507);
+    display: inline-block;
+    float: right;
+}
+
+.middle {
+    clear: both;
+    height: 225px;
+    width: 33%;
+    margin-top: 8px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 25px;
+    border: 2px dotted rgba(150, 150, 9, 0.507);
+}
+
+.directions{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: bisque;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: black;
+    border-radius: 25px;
+    border: 2px dotted rgba(150, 150, 9, 0.507);
+}
