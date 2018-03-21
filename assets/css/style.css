@@ -85,6 +85,11 @@ li {
     font-size: 100px;
 }
 
+#userScore{
+    float: left;
+    font-size: 100px;
+}
+
 .directions{
     text-align: center;
     font-size: 18px;
