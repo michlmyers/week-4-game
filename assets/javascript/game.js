@@ -1,6 +1,3 @@
-//USER SCORE UPDATES WITH NUMBERS FROM PIC/BUTTONS AND DISPLAYS TOTAL
-//IF USER SCORE EQUALS COMPUTER SCORE EXACTLY USER WIN COUNTER INCREASE BY 1 AND GAME RESETS
-//IF USER SCORE GOES ABOVE COMPUTER SCORE USER LOSS COUNTER INCREASES BY 1 AND GAME RESETS
 //GAME RESET FUNCTION WILL GENERATE NEW COMPUTER SCORE, NEW RANDOM PIC NUMBERS, AND CLEAR USER SCORE
 
 // CREATE VARIABLE COUNTER
@@ -25,46 +22,54 @@ console.log(numRock3);
 console.log(numRock4);
 console.log("This is the comp number: " + compNumber);
 
-// MAIN GAMEPLAY FUNCTIONs
-
 // Placing computer number over section
 $('#cpuScore').text(compNumber);
 
-// Place random numbers with each button image
-// numRock1
-
 //USER CLICKS IMAGE BUTTONS TO ADD TO THEIR SCORE COUNTER
+//USER SCORE UPDATES WITH NUMBERS FROM PIC/BUTTONS AND DISPLAYS TOTAL
+
+// First image click + add
 $("#rock1").on("click", function() {
 userScoreCounter += numRock1;  
 // Placing user count over section
 $('#userScore').text(userScoreCounter);
 // TEST AND DEBUG
-console.log("I'm working");
 console.log("Crystal image 1 clicked x: " + userScoreCounter)});
 
+// Second image click + add
 $("#rock2").on("click", function() {
 userScoreCounter += numRock2;  
 // Placing user count over section
 $('#userScore').text(userScoreCounter);
 // TEST AND DEBUG
-console.log("I'm working");
 console.log("Crystal image 2 clicked x: " + userScoreCounter)});
 
+// Third image click + add
 $("#rock3").on("click", function() {
 userScoreCounter += numRock3;  
 // Placing user count over section
 $('#userScore').text(userScoreCounter);
 // TEST AND DEBUG
-console.log("I'm working");
 console.log("Crystal image 3 clicked x: " + userScoreCounter)});
 
+// Fourth image click + add
 $("#rock4").on("click", function() {
 userScoreCounter += numRock4;  
 // Placing user count over section
 $('#userScore').text(userScoreCounter);
 // TEST AND DEBUG
-console.log("I'm working");
 console.log("Crystal image 4 clicked x: " + userScoreCounter)});
 
+//IF USER SCORE EQUALS COMPUTER SCORE EXACTLY USER WIN COUNTER INCREASE BY 1 AND GAME RESETS
+//IF USER SCORE GOES ABOVE COMPUTER SCORE USER LOSS COUNTER INCREASES BY 1 AND GAME RESETS
+$("images").on("click", function() {
+if (userScoreCounter === compNumber) {
+  alert("Bummer, you lost!");
+  console.log("Player lost");
+} else if (userScoreCounter == compNumber){
+  alert("Yeah dawg, you won!");
+  console.log("Player won");
+}
 
+})
 });

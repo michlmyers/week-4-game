@@ -51,7 +51,6 @@ li {
     background-color: black;
     border-radius: 25px;
     border: 2px dotted rgba(150, 150, 9, 0.507);
-    display: inline-block;
     float: left;
 }
 
@@ -63,7 +62,6 @@ li {
     background-color: black;
     border-radius: 25px;
     border: 2px dotted rgba(150, 150, 9, 0.507);
-    display: inline-block;
     float: right;
 }
 
