@@ -11,4 +11,4 @@ It's a useful project for me and likely any other student learning how to write 
 
 Pro users can probably move on unless they are curious. Students may find some usefullness in my layout or functions.
 
-You can contant me for any questions. I am the sole contributor to this as it's my homework.
+You can contact me for any questions. I am the sole contributor to this as it's my homework.
